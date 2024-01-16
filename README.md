@@ -7,3 +7,5 @@ This is a starter kit for Copilot custom apps. It contains a simple app that inc
 - A basic health check API
 - Prisma ORM support
 - Tailwind config based on Copilot theme
+- Zod setup for validation
+- Copilot SDK setup
