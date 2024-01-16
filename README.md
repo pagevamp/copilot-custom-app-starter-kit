@@ -10,3 +10,4 @@ This is a starter kit for Copilot custom apps. It contains a simple app that inc
 - Zod setup for validation
 - Copilot SDK setup
 - DB client set up
+- Pull request template
