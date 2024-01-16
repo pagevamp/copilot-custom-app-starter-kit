@@ -9,3 +9,4 @@ This is a starter kit for Copilot custom apps. It contains a simple app that inc
 - Tailwind config based on Copilot theme
 - Zod setup for validation
 - Copilot SDK setup
+- DB client set up
