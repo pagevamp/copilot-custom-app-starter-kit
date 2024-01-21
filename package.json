@@ -1,7 +1,15 @@
 {
-  "name": "@sazanrjb/create-copilot-custom-app",
-  "version": "0.1.0",
-  "bin": "./bin/cli.js",
+  "name": "@pagevamp/create-copilot-app",
+  "version": "1.0.1",
+  "bin": {
+    "create-copilot-app": "./bin/cli.js"
+  },
+  "repository": {
+    "url": "git://github.com/copilot-custom-app-starter-kit.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@pagevamp"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
