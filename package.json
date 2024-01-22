@@ -1,6 +1,6 @@
 {
-  "name": "@pagevamp/create-copilot-app",
-  "version": "1.0.1",
+  "name": "@outsidestudio/create-copilot-app",
+  "version": "1.0.0",
   "bin": {
     "create-copilot-app": "./bin/cli.js"
   },
@@ -8,7 +8,8 @@
     "url": "git://github.com/copilot-custom-app-starter-kit.git"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@pagevamp"
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   },
   "scripts": {
     "dev": "next dev",
