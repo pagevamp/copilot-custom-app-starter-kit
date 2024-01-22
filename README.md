@@ -11,3 +11,8 @@ This is a starter kit for Copilot custom apps. It contains a simple app that inc
 - Copilot SDK setup
 - DB client set up
 - Pull request template
+
+Installation
+```shell
+npx @outsidestudio/create-copilot-app app-name
+```
