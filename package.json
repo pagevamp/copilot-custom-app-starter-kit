@@ -1,5 +1,6 @@
 {
   "name": "@outsidestudio/create-copilot-app",
+  "description": "A custom app starter kit for Copilot",
   "version": "1.0.0",
   "keywords": ["nextjs", "nodejs"],
   "bin": {
