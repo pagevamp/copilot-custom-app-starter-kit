@@ -1,6 +1,7 @@
 {
   "name": "@outsidestudio/create-copilot-app",
   "version": "1.0.0",
+  "keywords": ["nextjs", "nodejs"],
   "bin": {
     "create-copilot-app": "./bin/cli.js"
   },
