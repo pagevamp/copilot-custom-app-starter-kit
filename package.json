@@ -1,7 +1,7 @@
 {
   "name": "create-copilot-app",
   "description": "A custom app starter kit for Copilot",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "keywords": ["nextjs", "nodejs"],
   "bin": {
     "create-copilot-app": "./bin/cli.js"
