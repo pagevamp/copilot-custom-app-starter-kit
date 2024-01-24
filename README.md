@@ -13,6 +13,7 @@ This is a starter kit for Copilot custom apps. It contains a simple app that inc
 - Pull request template
 
 Installation
+
 ```shell
 npx create-copilot-app app-name
 ```
