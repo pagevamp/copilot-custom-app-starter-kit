@@ -14,5 +14,5 @@ This is a starter kit for Copilot custom apps. It contains a simple app that inc
 
 Installation
 ```shell
-npx @outsidestudio/create-copilot-app app-name
+npx create-copilot-app app-name
 ```
