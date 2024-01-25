@@ -2,7 +2,10 @@
   "name": "create-copilot-app",
   "description": "A custom app starter kit for Copilot",
   "version": "1.0.2",
-  "keywords": ["nextjs", "nodejs"],
+  "keywords": [
+    "nextjs",
+    "nodejs"
+  ],
   "bin": {
     "create-copilot-app": "./bin/cli.js"
   },
@@ -29,6 +32,9 @@
     "postinstall": "prisma generate"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.15.6",
     "@prisma/client": "^5.7.1",
     "@vercel/postgres": "^0.5.1",
     "copilot-node-sdk": "^0.0.45",

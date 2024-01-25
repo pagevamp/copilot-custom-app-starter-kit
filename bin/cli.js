@@ -1,11 +1,10 @@
 #!/usr/bin/env node
 
 const runCommand = (command) => {
-  const { execSync } = require("child_process");
+  const { execSync } = require('child_process');
 
   try {
-    execSync(command, { stdio: "inherit" });
-
+    execSync(command, { stdio: 'inherit' });
   } catch (e) {
     console.error(`Failed to execute the command ${command}`, e);
 
@@ -13,7 +12,7 @@ const runCommand = (command) => {
   }
 
   return true;
-}
+};
 
 const repositoryName = process.argv[2];
 const command = `git clone --depth 1 git@github.com:pagevamp/copilot-custom-app-starter-kit.git ${repositoryName}`;
