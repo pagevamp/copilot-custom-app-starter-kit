@@ -7,6 +7,7 @@ class DBClient {
     if (this.client) {
       return this.client;
     }
+
     this.client = new PrismaClient();
 
     return this.client;

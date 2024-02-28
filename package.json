@@ -1,7 +1,21 @@
 {
-  "name": "copilot-custom-app-starter-kit",
-  "version": "0.1.0",
-  "private": true,
+  "name": "create-copilot-app",
+  "description": "A custom app starter kit for Copilot",
+  "version": "1.1.0",
+  "keywords": [
+    "nextjs",
+    "nodejs"
+  ],
+  "bin": {
+    "create-copilot-app": "./bin/cli.js"
+  },
+  "repository": {
+    "url": "https://github.com/copilot-custom-app-starter-kit.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -18,12 +32,17 @@
     "postinstall": "prisma generate"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.15.6",
     "@prisma/client": "^5.7.1",
     "@vercel/postgres": "^0.5.1",
+    "copilot-node-sdk": "^0.0.45",
     "next": "14.0.4",
     "prisma": "^5.7.1",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@types/node": "^20",
