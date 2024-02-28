@@ -1,4 +1,4 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from 'tailwindcss';
 
 const config: Config = {
   content: [
@@ -8,17 +8,17 @@ const config: Config = {
   ],
   theme: {
     screens: {
-      '2xs': { 'max': '320px' },
-      xs: { 'max': '384px' },
-      sm: { 'max': '480px' },
-      md: { 'max': '560px' },
-      lg: { 'max': '640px' },
-      xl: { 'max': '768px' },
-      '2xl': { 'max': '1024px' },
-      '3xl': { 'max': '1280px' },
-      '4xl': { 'max': '1440px' },
-      '5px': { 'max': '1600px' },
-      '6xl': { 'max': '1920px' },
+      '2xs': { max: '320px' },
+      xs: { max: '384px' },
+      sm: { max: '480px' },
+      md: { max: '560px' },
+      lg: { max: '640px' },
+      xl: { max: '768px' },
+      '2xl': { max: '1024px' },
+      '3xl': { max: '1280px' },
+      '4xl': { max: '1440px' },
+      '5px': { max: '1600px' },
+      '6xl': { max: '1920px' },
     },
     extend: {
       spacing: {
@@ -44,8 +44,7 @@ const config: Config = {
 
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       height: {
         '100': '550px',
@@ -94,7 +93,7 @@ const config: Config = {
         'gray-300': '#C9CBCD',
         'gray-200': '#DFE1E4',
         'gray-100': '#C9CBCD',
-        'secondary': '#6B6F76'
+        secondary: '#6B6F76',
       },
       borderColor: {
         'col-1': '#DFE1E4',
@@ -105,7 +104,7 @@ const config: Config = {
       boxShadow: {
         'variant-1': '0px 6px 20px 0px rgba(0, 0, 0, 0.12)',
         'variant-2': ' 0px 8px 24px 0px rgba(0, 0, 0, 0.12)',
-        'variant-3': '0px 6px 20px 0px rgba(0, 0, 0, 0.07)'
+        'variant-3': '0px 6px 20px 0px rgba(0, 0, 0, 0.07)',
       },
       borderRadius: {
         none: '0px',
@@ -129,5 +128,5 @@ const config: Config = {
     },
   },
   plugins: [],
-}
-export default config
+};
+export default config;
