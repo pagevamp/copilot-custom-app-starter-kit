@@ -10,7 +10,7 @@
     "create-copilot-app": "./bin/cli.js"
   },
   "repository": {
-    "url": "https://github.com/copilot-custom-app-starter-kit.git"
+    "url": "https://github.com/pagevamp/copilot-custom-app-starter-kit"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
