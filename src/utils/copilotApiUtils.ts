@@ -9,10 +9,16 @@ import {
   CompanyResponseSchema,
   MeResponse,
   MeResponseSchema,
+  Token,
+  TokenSchema,
+  WorkspaceResponse,
+  WorkspaceResponseSchema,
 } from '@/types/common';
 
+export type CopilotSDK = typeof Copilot & { getTokenPayload?: () => Promise<Token> };
+
 export class CopilotAPI {
-  copilot: typeof Copilot;
+  copilot: CopilotSDK;
 
   constructor(apiToken: string) {
     this.copilot = copilotApi({
@@ -22,7 +28,15 @@ export class CopilotAPI {
   }
 
   async me(): Promise<MeResponse> {
-    return MeResponseSchema.parse(await this.copilot.getUserAndPortalInfo());
+    return MeResponseSchema.parse(await this.copilot.getUserInfo());
+  }
+
+  async getWorkspaceInfo(): Promise<WorkspaceResponse> {
+    return WorkspaceResponseSchema.parse(await this.copilot.getWorkspaceInfo());
+  }
+
+  async getTokenPayload(): Promise<Token | undefined> {
+    return TokenSchema.parse(await this.copilot.getTokenPayload?.());
   }
 
   async getClient(clientId: string): Promise<ClientResponse> {
