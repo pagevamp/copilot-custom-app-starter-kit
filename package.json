@@ -37,7 +37,7 @@
     "@mui/material": "^5.15.6",
     "@prisma/client": "^5.7.1",
     "@vercel/postgres": "^0.5.1",
-    "copilot-node-sdk": "^0.0.45",
+    "copilot-node-sdk": "^1.2.0",
     "next": "14.0.4",
     "prisma": "^5.7.1",
     "react": "^18",
