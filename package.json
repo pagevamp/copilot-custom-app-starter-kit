@@ -1,7 +1,7 @@
 {
   "name": "create-copilot-app",
   "description": "A custom app starter kit for Copilot",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "keywords": [
     "nextjs",
     "nodejs"
@@ -10,7 +10,7 @@
     "create-copilot-app": "./bin/cli.js"
   },
   "repository": {
-    "url": "https://github.com/copilot-custom-app-starter-kit.git"
+    "url": "https://github.com/pagevamp/copilot-custom-app-starter-kit"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
