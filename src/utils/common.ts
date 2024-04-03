@@ -1,8 +1,23 @@
-import { CopilotAPI } from '@/utils/copilotApiUtils';
-import '@js-joda/timezone';
-import { MeResponse } from '@/types/common';
+import { NextResponse } from 'next/server';
+import { CopilotApiError } from '@/types/CopilotApiError';
 
-export async function getCurrentUser(apiToken: string): Promise<MeResponse> {
-  const copilotClient = new CopilotAPI(apiToken);
-  return await copilotClient.me();
+export function respondError(message: string, status: number = 500) {
+  return NextResponse.json({ message }, { status });
+}
+
+export function handleError(error: unknown) {
+  console.error(error);
+  let apiError = {
+    message: 'Something went wrong',
+    status: 500,
+  };
+  if (error instanceof CopilotApiError) {
+    apiError = {
+      ...apiError,
+      status: error.status,
+      message: error.body.message,
+    };
+  }
+
+  return respondError(apiError.message, apiError.status);
 }
