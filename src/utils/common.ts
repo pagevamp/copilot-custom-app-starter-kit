@@ -13,7 +13,6 @@ export function handleError(error: unknown) {
   };
   if (error instanceof CopilotApiError) {
     apiError = {
-      ...apiError,
       status: error.status,
       message: error.body.message,
     };
