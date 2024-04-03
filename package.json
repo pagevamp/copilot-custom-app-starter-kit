@@ -1,7 +1,7 @@
 {
   "name": "create-copilot-app",
   "description": "A custom app starter kit for Copilot",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "keywords": [
     "nextjs",
     "nodejs"
@@ -37,7 +37,7 @@
     "@mui/material": "^5.15.6",
     "@prisma/client": "^5.7.1",
     "@vercel/postgres": "^0.5.1",
-    "copilot-node-sdk": "^1.2.0",
+    "copilot-node-sdk": "^2.0.0",
     "next": "14.0.4",
     "prisma": "^5.7.1",
     "react": "^18",
