@@ -5,11 +5,11 @@ describe('Health Check', () => {
 
   beforeAll(() => {
     superTest = new SuperTestService();
-  })
+  });
 
   it('should return 200', async () => {
     const response = await superTest.get('/api/health-check');
 
     expect(response.status).toBe(200);
   });
-})
+});
