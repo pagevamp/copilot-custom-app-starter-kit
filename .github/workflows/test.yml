@@ -18,8 +18,8 @@ jobs:
           cache: yarn
           cache-dependency-path: './yarn.lock'
 
-      - name: Install dependencies
-        run: yarn install
+      - name: Run application in dev
+        run: yarn dev
 
       - name: Run tests
         run: yarn test
