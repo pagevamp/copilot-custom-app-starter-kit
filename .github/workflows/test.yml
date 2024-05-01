@@ -19,7 +19,10 @@ jobs:
           cache-dependency-path: './yarn.lock'
 
       - name: Run application in dev
-        run: yarn dev
+        run: yarn dev > /dev/null 2>&1 &
+
+      - name: Wait for server to start
+        run: sleep 10s
 
       - name: Run tests
         run: yarn test
