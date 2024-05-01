@@ -15,8 +15,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18.17.0
-          cache: yarn
-          cache-dependency-path: './yarn.lock'
 
       - name: Run application in dev
         run: yarn dev > /dev/null 2>&1 &
