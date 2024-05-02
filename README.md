@@ -13,7 +13,6 @@ This is a starter kit for Copilot custom apps. It contains a simple app that inc
 - Pull request template
 - MUI setup that includes `ThemeRegistry`, theme config and its type definitions
 - Dockerized PostgreSQL
-- Jest setup for e2e tests
 - Setup Jest for testing
 
 Installation
