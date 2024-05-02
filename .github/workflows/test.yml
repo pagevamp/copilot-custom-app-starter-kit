@@ -20,6 +20,9 @@ jobs:
           node-version: 18.17.0
           cache: yarn
 
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
       - name: Run application in dev
         run: yarn dev > /dev/null 2>&1 &
 
