@@ -30,7 +30,7 @@
     "prettier:fix": "prettier --write .",
     "lint-staged": "npx lint-staged",
     "postinstall": "prisma generate",
-    "test": "NODE_ENV=development jest --runInBand"
+    "test": "jest --runInBand"
   },
   "dependencies": {
     "@emotion/react": "^11.11.3",

@@ -2,6 +2,9 @@ name: Test
 
 on: push
 
+env:
+  NODE_ENV: test
+
 jobs:
   run-linters:
     name: Run tests
@@ -23,4 +26,4 @@ jobs:
         run: sleep 10s
 
       - name: Run tests
-        run: yarn test --production=false
+        run: yarn test
