@@ -1,0 +1,30 @@
+name: Test
+
+on: push
+
+jobs:
+  run-linters:
+    name: Run tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.17.0
+          cache: yarn
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Run application in dev
+        run: yarn dev > /dev/null 2>&1 &
+
+      - name: Wait for server to start
+        run: sleep 10s
+
+      - name: Run tests
+        run: yarn test
